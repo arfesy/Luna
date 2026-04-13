@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,6 +26,7 @@
             background-repeat: no-repeat;
         }
 
+        /* Capa blanca para que el texto sea legible sobre la imagen */
         body::before {
             content: "";
             position: fixed;
@@ -87,7 +89,7 @@
             text-decoration: none; 
             display: inline-block; 
             border-radius: 0; 
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             letter-spacing: 2px;
             font-weight: bold;
             text-transform: uppercase;
@@ -118,6 +120,7 @@
         .social-links .fa-whatsapp:hover { color: #25d366; }
         .social-links .fa-instagram:hover { color: #e1306c; }
         
+        /* Botón flotante de WhatsApp */
         .whatsapp-float {
             position: fixed;
             width: 60px; height: 60px;
@@ -127,13 +130,21 @@
             border-radius: 50px;
             text-align: center;
             font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
             z-index: 100;
             display: flex; justify-content: center; align-items: center;
             text-decoration: none;
             transition: transform 0.3s;
         }
         .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Ajustes para celulares */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; letter-spacing: 5px; }
+            header { padding: 40px 10px; }
+            .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
+            .product-img { height: 300px; }
+        }
     </style>
 </head>
 <body>
@@ -155,7 +166,7 @@
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1549437149-14a90961805b?q=80&w=400&auto=format&fit=crop" class="product-img" alt="Body Encaje Rose">
+            <img src="https://images.unsplash.com/photo-1549437149-14a90961805b?q=80&w=400&auto=format&fit=crop" class="product-img" alt="Body Rose Lace">
             <div class="product-info">
                 <h3>Body Rose Lace</h3>
                 <span class="price">$22.500</span>
@@ -171,7 +182,7 @@
         <a href="https://wa.me/5492284231261" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.instagram.com/melisadicampli/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-    <p style="margin-top: 40px; font-size: 0.85rem; opacity: 0.6;">&copy; 2024 Luna Lencería. Todos los derechos reservados.</p>
+    <p style="margin-top: 40px; font-size: 0.85rem; opacity: 0.6;">&copy; 2026 Luna Lencería. Todos los derechos reservados.</p>
 </footer>
 
 <a href="https://wa.me/5492284231261" class="whatsapp-float" target="_blank">
@@ -179,8 +190,4 @@
 </a>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> ef4883a (Sincronizando archivos locales)
